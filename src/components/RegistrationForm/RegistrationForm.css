@@ -1,0 +1,126 @@
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="password"]::placeholder {
+    color: #aaa;
+  }
+  
+  select[name="day"],
+  select[name="month"],
+  select[name="year"] {
+    width: calc(33% - 14px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  select[name="year"] {
+    margin-right: 0;
+  }
+  
+  span {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .alert.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .top-bar {
+    background-color: black;
+    padding: 1% 1% 1% 10%;
+    font-size: 1.2em;
+  }
+
+  .formHeading {
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      padding: 10px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: calc(100% - 10px);
+    }
+  
+    select[name="day"],
+    select[name="month"],
+    select[name="year"] {
+      width: calc(33% - 7px);
+      margin-right: 5px;
+    }
+  
+    select[name="year"] {
+      margin-right: 0;
+    }
+  }
